@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduling Simulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Process Scheduling Simulator</h1>
+        <p>Select a scheduling algorithm and input process details to simulate the scheduling.</p>
+    </header>
+    
+    <main>
+        <!-- Buttons for selecting algorithms -->
+        <section>
+            <h2>Select a Program to Run</h2>
+            <button onclick="runFCFS()">Run First-Come, First-Served</button>
+            <button onclick="runSJF()">Run Shortest Job First</button>
+            <button onclick="runRR()">Run Round Robin</button>
+            <button onclick="runPriority()">Run Priority Scheduling</button>
+        </section>
+
+        <!-- Output Section -->
+        <section id="output">
+            <h2>Output</h2>
+            <div id="outputText">Results will be displayed here.</div>
+        </section>
+
+        <!-- Visualization Section (Graph) -->
+        <section id="graph">
+            <h2>Visualization (Gantt Chart)</h2>
+            <canvas id="ganttChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created as part of an OS Project. 2025</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
